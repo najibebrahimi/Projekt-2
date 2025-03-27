@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#knowledge">Knowledge</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#references">References</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Portrait and CV Download
+    <section id="intro">
+      <img src="static/assets/portrait.svg" alt="My Portrait" class="portrait">
+      <button id="download-cv">Download My CV</button>
+    </section> -->
+
+    <!-- Portrait and CV Download -->
+<section id="intro">
+  <div class="intro-container">
+    <img src="static/assets/portrait.svg" alt="Portrait of [Your Name]" class="portrait">
+    <div class="intro-content">
+      <h1>Hello, I'm Najib Ebrahimi</h1>
+      <p>Welcome to my personal portfolio! Here you can find more about me, my projects, and skills.</p>
+      <a id="download-cv" href="#" download="download-cv" class="btn-download-cv">Download My CV</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <!-- About Me Section -->
+    <section id="about">
+      <h1>About Me</h1>
+      <p>Den 12 juni 2020 tog jag studenten från El- och energiprogrammet vid Norrtelje Teknik- och Naturbruksgymnasium med inriktning datorkommunikation. Jag uppnådde betyget B (näst högsta betyg) i kurserna Matematik 1a, Matematik 2a och Datorteknik 1a. I ämnena Elektromekanik, Nätverksteknik, Praktisk Ellära samt Support och hemservice fick jag betyget C.
+
+        Under höstterminen 2019 gjorde jag praktik hos JT Elektronik AB i Norrtälje och har sedan dess fortsatt att arbeta där som timanställd. Praktiken fortsatte även under vårterminen 2020. På grund av periodvis arbetsbrist har jag tidvis varit utlånad till Note Norrtälje AB, där mina arbetsuppgifter bestått av att testa och packa kretskort.
+        
+        För mig är utbildning oerhört viktig eftersom det man lär sig i skolan har en direkt påverkan på ens framtid. Samtidigt anser jag att skolan inte är den enda vägen till kunskap. Att få möjlighet att arbeta praktiskt inom områden som intresserar en är minst lika betydelsefullt för personlig och yrkesmässig utveckling.
+        
+        Jag är särskilt intresserad av matematik, teknik och datorer. För närvarande studerar jag på KYH till .NET-utvecklare och kommer att ta examen sommaren 2025. Mitt mål är att därefter arbeta som mjukvaruutvecklare, där jag kan fortsätta utvecklas och bidra med mina kunskaper och erfarenheter inom programmering och systemutveckling.
+        </p>
+    </section>
+
+    <!-- Knowledge Section -->
+    <section id="knowledge">
+      <h2>Technologies I Know</h2>
+      <ul class="tech-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Node.js</li>
+        <li>C#</li>
+        <li>React</li>
+        <!-- Add more as needed -->
+      </ul>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <h2>My Projects</h2>
+      <div id="projects-grid" class="grid-container">
+        <!-- Projects will be fetched and added here dynamically -->
+      </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references">
+      <h2>References</h2>
+      <ul>
+        <li><strong>Firma:</strong> Nordic Engineering Partner </li>
+        <!-- Add more references -->
+      </ul>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form" action="/api/contact" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-links">
+      <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
+    </div>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="static/js/script.js"></script>
+</body>
+</html>
